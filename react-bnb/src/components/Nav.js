@@ -1,11 +1,28 @@
 import React from 'react';
 
 export default class Nav extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            age: 1    
+        }
+    }
     
-    render () {
-
+    makeMeOlder() {
+        this.setState({
+            age: this.state.age + 1
+        });     
+    }
+    
+    render () {        
         return (
-            <h1>Fuck</h1>
+            <div>
+                <h1>Fuck</h1>
+                <button onClick={this.makeMeOlder.bind(this)} className="btn btn-info"> 
+                Click me fucka - 
+                {this.state.age}  
+                </button>
+            </div>
         );     
 
     }  

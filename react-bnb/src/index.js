@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 class App extends React.Component {
     
     render() {
-
     	var name1 = "Dom";
    		var name2 = "Tom";
 
