@@ -2,9 +2,11 @@ import React from 'react';
 
 export default class Nav extends React.Component {
     
-    render () {      
+    render () {
+
         return (
-            <label> fuck </label>
-        );      
+            <h1>Fuck</h1>
+        );     
+
     }  
 }
